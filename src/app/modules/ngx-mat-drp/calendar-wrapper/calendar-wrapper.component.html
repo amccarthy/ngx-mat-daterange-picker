@@ -22,5 +22,8 @@
     (_userSelection)="onUserSelection($event)"
     [dateFilter]="weekendFilter">
   </mat-calendar>
-
+  <mat-form-field class="time">
+    <mat-label>Time</mat-label>
+    <input matInput type="time" [value]="selectedTime" (change)="onTimeChange($event)">
+  </mat-form-field>
 </div>

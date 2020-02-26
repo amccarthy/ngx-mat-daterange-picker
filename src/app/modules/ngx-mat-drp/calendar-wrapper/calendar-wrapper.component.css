@@ -29,7 +29,9 @@
     color: rgba(0,0,0,.38);
     padding-left: 5%;
 }
-
+.time {
+  padding: 1rem;
+}
 /* .mat-calendar {
     width: 296px;
     height: 354px;

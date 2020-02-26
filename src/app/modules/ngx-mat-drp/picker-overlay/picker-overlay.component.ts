@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation, ViewChild } from '@angular/core';
 import { PresetItem, NgxDrpOptions } from '../model/model';
 import { RangeStoreService } from '../services/range-store.service';
 import { OverlayRef } from '@angular/cdk/overlay';
@@ -25,6 +25,8 @@ export class PickerOverlayComponent implements OnInit {
   applyLabel: string;
   cancelLabel: string;
   shouldAnimate: string;
+
+  @ViewChild('picker') picker: any;
 
   constructor(
     private rangeStoreService: RangeStoreService,
